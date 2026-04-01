@@ -374,8 +374,28 @@ img {
   max-width: 840px;
 }
 
-.case-footer .hero-actions {
+.case-footer-actions {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.case-footer .hero-actions {
+  margin-top: 0;
+}
+
+.button-return {
+  margin-left: auto;
+  border-color: var(--line);
+  color: var(--muted-strong);
+  background: transparent;
+}
+
+.button-return:hover {
+  border-color: rgba(220, 236, 255, 0.42);
+  color: var(--text);
 }
 
 @media (max-width: 980px) {
@@ -427,6 +447,10 @@ img {
   .tech-strip {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .button-return {
+    margin-left: 0;
   }
 }
 
