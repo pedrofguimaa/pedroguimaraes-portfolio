@@ -42,8 +42,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background:
-    radial-gradient(circle at 15% 15%, rgba(89, 168, 255, 0.14), transparent 24%),
-    radial-gradient(circle at 85% 18%, rgba(117, 242, 198, 0.12), transparent 26%),
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(89, 168, 255, 0.14),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 85% 18%,
+      rgba(117, 242, 198, 0.12),
+      transparent 26%
+    ),
     linear-gradient(180deg, #050a11 0%, #08111c 48%, #050912 100%);
   cursor: none;
   overflow-x: hidden;
@@ -69,7 +77,13 @@ body::before {
 body::after {
   background:
     linear-gradient(transparent, rgba(255, 255, 255, 0.02)),
-    repeating-linear-gradient(180deg, transparent 0, transparent 7px, rgba(255, 255, 255, 0.012) 8px, transparent 9px);
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 7px,
+      rgba(255, 255, 255, 0.012) 8px,
+      transparent 9px
+    );
   opacity: 0.4;
 }
 
@@ -172,7 +186,9 @@ img {
   color: var(--text);
   background: rgba(117, 242, 198, 0.08);
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 0 0 1px rgba(117, 242, 198, 0.16), 0 0 28px rgba(117, 242, 198, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(117, 242, 198, 0.16),
+    0 0 28px rgba(117, 242, 198, 0.12);
 }
 
 .social-sidebar svg,
@@ -314,7 +330,9 @@ main {
 .button-primary {
   background: linear-gradient(135deg, var(--accent), #8cf2ff);
   color: #031017;
-  box-shadow: 0 0 0 1px rgba(117, 242, 198, 0.18), 0 20px 40px rgba(117, 242, 198, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(117, 242, 198, 0.18),
+    0 20px 40px rgba(117, 242, 198, 0.18);
 }
 
 .button-primary:hover,
@@ -334,13 +352,19 @@ main {
 .button-secondary:hover,
 .button-secondary:focus-visible {
   border-color: rgba(117, 242, 198, 0.28);
-  box-shadow: 0 18px 34px rgba(4, 12, 22, 0.34), inset 0 0 0 1px rgba(117, 242, 198, 0.1);
+  box-shadow:
+    0 18px 34px rgba(4, 12, 22, 0.34),
+    inset 0 0 0 1px rgba(117, 242, 198, 0.1);
 }
 
 .button-download {
   width: fit-content;
   min-width: 220px;
-  background: linear-gradient(135deg, rgba(117, 242, 198, 0.18), rgba(89, 168, 255, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(117, 242, 198, 0.18),
+    rgba(89, 168, 255, 0.2)
+  );
   border-color: rgba(117, 242, 198, 0.24);
   box-shadow: 0 0 30px rgba(117, 242, 198, 0.1);
 }
@@ -372,7 +396,13 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(117, 242, 198, 0.08), transparent 30%, transparent 70%, rgba(89, 168, 255, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(117, 242, 198, 0.08),
+    transparent 30%,
+    transparent 70%,
+    rgba(89, 168, 255, 0.08)
+  );
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
@@ -386,7 +416,11 @@ main {
   content: "";
   position: absolute;
   inset: -35%;
-  background: radial-gradient(circle, rgba(117, 242, 198, 0.16), transparent 42%);
+  background: radial-gradient(
+    circle,
+    rgba(117, 242, 198, 0.16),
+    transparent 42%
+  );
   opacity: 0;
   transform: translate3d(var(--glow-x, 0), var(--glow-y, 0), 0);
   transition:
@@ -432,7 +466,11 @@ main {
     0 0 0 1px rgba(117, 242, 198, 0.12),
     0 0 50px rgba(117, 242, 198, 0.12);
   animation: avatarFloat 6s ease-in-out infinite;
-  transform: translate3d(var(--parallax-card-x, 0), var(--parallax-card-y, 0), 0);
+  transform: translate3d(
+    var(--parallax-card-x, 0),
+    var(--parallax-card-y, 0),
+    0
+  );
   transition:
     transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.35s ease,
@@ -441,14 +479,24 @@ main {
 
 @keyframes avatarFloat {
   50% {
-    transform: translate3d(var(--parallax-card-x, 0), calc(var(--parallax-card-y, 0) - 8px), 0) scale(1.015);
+    transform: translate3d(
+        var(--parallax-card-x, 0),
+        calc(var(--parallax-card-y, 0) - 8px),
+        0
+      )
+      scale(1.015);
   }
 }
 
 .avatar-scan {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(117, 242, 198, 0.1) 48%, transparent 100%);
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(117, 242, 198, 0.1) 48%,
+    transparent 100%
+  );
   animation: scan 5s linear infinite;
   pointer-events: none;
 }
@@ -464,7 +512,7 @@ main {
 
 .avatar-frame img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4.35;
   object-fit: cover;
   border-radius: 18px;
   image-rendering: pixelated;
@@ -618,7 +666,13 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(117, 242, 198, 0.08), transparent 30%, transparent 72%, rgba(89, 168, 255, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(117, 242, 198, 0.08),
+    transparent 30%,
+    transparent 72%,
+    rgba(89, 168, 255, 0.08)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -816,13 +870,26 @@ main {
 
 .project-preview::after {
   background:
-    radial-gradient(circle at 18% 22%, rgba(117, 242, 198, 0.08), transparent 24%),
-    radial-gradient(circle at 80% 70%, rgba(89, 168, 255, 0.07), transparent 28%);
+    radial-gradient(
+      circle at 18% 22%,
+      rgba(117, 242, 198, 0.08),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(89, 168, 255, 0.07),
+      transparent 28%
+    );
+  opacity: 0.28;
 }
 
 .project-card:hover .project-preview::before,
 .project-card:hover .project-preview::after {
   transform: scale(1.03);
+}
+
+.project-card:hover .project-preview::after {
+  opacity: 0.08;
 }
 
 .project-card:hover {
@@ -831,6 +898,13 @@ main {
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.03),
     0 16px 28px rgba(4, 12, 22, 0.28);
+}
+
+.project-card::before,
+.project-card::after,
+.project-card:hover::before,
+.project-card:hover::after {
+  opacity: 0 !important;
 }
 
 .project-preview > * {
@@ -912,11 +986,11 @@ main {
 }
 
 .project-actions {
-  gap: 12px;
+  gap: 10px;
 }
 
 .project-actions .button {
-  min-width: 132px;
+  min-width: 118px;
 }
 
 .rift-codex {
@@ -1196,12 +1270,24 @@ body.is-loaded .hero-copy > * {
   animation: heroRise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-body.is-loaded .hero-copy > *:nth-child(1) { animation-delay: 0.08s; }
-body.is-loaded .hero-copy > *:nth-child(2) { animation-delay: 0.16s; }
-body.is-loaded .hero-copy > *:nth-child(3) { animation-delay: 0.24s; }
-body.is-loaded .hero-copy > *:nth-child(4) { animation-delay: 0.32s; }
-body.is-loaded .hero-copy > *:nth-child(5) { animation-delay: 0.4s; }
-body.is-loaded .hero-copy > *:nth-child(6) { animation-delay: 0.48s; }
+body.is-loaded .hero-copy > *:nth-child(1) {
+  animation-delay: 0.08s;
+}
+body.is-loaded .hero-copy > *:nth-child(2) {
+  animation-delay: 0.16s;
+}
+body.is-loaded .hero-copy > *:nth-child(3) {
+  animation-delay: 0.24s;
+}
+body.is-loaded .hero-copy > *:nth-child(4) {
+  animation-delay: 0.32s;
+}
+body.is-loaded .hero-copy > *:nth-child(5) {
+  animation-delay: 0.4s;
+}
+body.is-loaded .hero-copy > *:nth-child(6) {
+  animation-delay: 0.48s;
+}
 
 @keyframes heroRise {
   from {
@@ -1330,7 +1416,9 @@ body.is-loaded .hero-copy > *:nth-child(6) { animation-delay: 0.48s; }
     margin: 0 auto;
     background: var(--text);
     border-radius: 999px;
-    transition: transform 0.25s ease, opacity 0.25s ease;
+    transition:
+      transform 0.25s ease,
+      opacity 0.25s ease;
   }
 
   .mobile-dock-toggle.is-open span:nth-child(1) {
@@ -1463,5 +1551,4 @@ body.is-loaded .hero-copy > *:nth-child(6) { animation-delay: 0.48s; }
     top: 16px;
     right: 16px;
   }
-
 }

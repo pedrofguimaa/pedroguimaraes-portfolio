@@ -1,0 +1,258 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rift Codex | Case de Projeto</title>
+    <meta
+      name="description"
+      content="Case completo do projeto Rift Codex: visão geral, objetivo, stack, processo e aprendizados."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="project-case.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <aside class="social-sidebar" aria-label="Links principais">
+      <a
+        href="https://www.linkedin.com/in/pedro-fguima/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.56 18.5V9.75h2.76v8.75H5.56Zm4.34 0V9.75h2.65v1.2h.04c.37-.7 1.28-1.43 2.63-1.43 2.82 0 3.34 1.8 3.34 4.15v4.83H15.8v-4.28c0-1.02-.02-2.33-1.47-2.33-1.47 0-1.69 1.12-1.69 2.25v4.36H9.9Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://github.com/pedrofguimaa"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2.25a9.75 9.75 0 0 0-3.08 19c.49.09.67-.21.67-.47v-1.64c-2.73.58-3.31-1.15-3.31-1.15-.45-1.11-1.09-1.4-1.09-1.4-.9-.6.07-.59.07-.59 1 .07 1.53 1 1.53 1 .88 1.47 2.3 1.04 2.86.79.09-.62.35-1.04.63-1.27-2.18-.24-4.47-1.07-4.47-4.79 0-1.06.39-1.93 1.03-2.6-.1-.24-.45-1.23.1-2.57 0 0 .84-.26 2.75.99A9.8 9.8 0 0 1 12 7.06c.88 0 1.76.12 2.58.36 1.9-1.25 2.74-.99 2.74-.99.55 1.34.2 2.33.1 2.57.64.67 1.03 1.54 1.03 2.6 0 3.73-2.29 4.54-4.48 4.78.36.3.67.88.67 1.77v2.63c0 .26.18.57.68.47A9.75 9.75 0 0 0 12 2.25Z"
+          />
+        </svg>
+      </a>
+      <a
+        href="assets/assetsprojects/curriculo.pdf"
+        download
+        aria-label="Baixar currículo"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 3.75a.75.75 0 0 1 .75.75v8.69l2.47-2.47a.75.75 0 1 1 1.06 1.06l-3.75 3.75a.75.75 0 0 1-1.06 0l-3.75-3.75a.75.75 0 0 1 1.06-1.06l2.47 2.47V4.5a.75.75 0 0 1 .75-.75Zm-6 13.5A.75.75 0 0 0 5.25 18v.75A2.25 2.25 0 0 0 7.5 21h9a2.25 2.25 0 0 0 2.25-2.25V18a.75.75 0 0 0-1.5 0v.75a.75.75 0 0 1-.75.75h-9a.75.75 0 0 1-.75-.75V18a.75.75 0 0 0-.75-.75Z"
+          />
+        </svg>
+      </a>
+    </aside>
+
+    <button
+      class="mobile-dock-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-label="Abrir atalhos"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <main class="case-main shell">
+      <a class="back-link" href="index.html#projetos">voltar para projetos</a>
+
+      <section class="case-hero">
+        <p class="case-label">case principal</p>
+        <h1>Rift Codex</h1>
+        <p class="hero-subtitle">
+          Arquivo visual interativo inspirado no universo de Runeterra.
+        </p>
+        <p class="hero-description">
+          Interface autoral inspirada no universo de League of Legends, pensada
+          para organizar informações de Runeterra em uma experiência imersiva,
+          com navegação fluida, identidade visual forte e leitura orientada a
+          produto.
+        </p>
+
+        <div class="tech-inline" aria-label="Tecnologias principais">
+          <span class="tech-pill">
+            <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+            <span>HTML5</span>
+          </span>
+          <span class="tech-pill">
+            <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+            <span>CSS3</span>
+          </span>
+          <span class="tech-pill">
+            <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+            <span>JavaScript</span>
+          </span>
+          <span class="tech-pill">
+            <i class="devicon-github-original" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </span>
+        </div>
+      </section>
+
+      <section class="hero-visual" aria-label="Imagem principal do projeto">
+        <img
+          src="assets/assetsprojects/riftcodex1.png"
+          alt="Tela principal do projeto Rift Codex"
+        />
+      </section>
+
+      <article class="editorial-flow">
+        <section class="editorial-section" id="sobre">
+          <p class="section-label">sobre o projeto</p>
+          <h2>Interface viva orientada por narrativa e estrutura</h2>
+          <p>
+            O Rift Codex organiza informação como um sistema explorável. Cada
+            bloco visual tem função de leitura, cada camada ajuda na navegação e
+            o layout reforça a sensação de um produto digital real.
+          </p>
+        </section>
+
+        <section class="editorial-section" id="objetivo">
+          <p class="section-label">objetivo</p>
+          <h2>
+            Construir um case autoral com identidade forte e leitura fluida
+          </h2>
+          <p>
+            O objetivo foi sair do portfólio comum e desenhar uma experiência
+            com direção visual clara, conteúdo hierarquizado e microinterações
+            discretas, úteis para guiar o usuário sem poluir a interface.
+          </p>
+        </section>
+
+        <section class="editorial-section" id="tecnologias">
+          <p class="section-label">tecnologias utilizadas</p>
+          <h2>Base front-end com execução visual consistente</h2>
+          <p>
+            A stack prioriza velocidade de prototipação e controle fino da
+            interface, permitindo evoluir o produto com clareza em estrutura,
+            estilo e comportamento.
+          </p>
+
+          <div class="tech-strip" role="list" aria-label="Tecnologias usadas">
+            <div class="tech-item" role="listitem">
+              <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-item" role="listitem">
+              <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="tech-item" role="listitem">
+              <i
+                class="devicon-javascript-plain colored"
+                aria-hidden="true"
+              ></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item" role="listitem">
+              <i class="devicon-git-plain colored" aria-hidden="true"></i>
+              <span>Git</span>
+            </div>
+            <div class="tech-item" role="listitem">
+              <i class="devicon-github-original" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-item" role="listitem">
+              <i class="devicon-figma-plain colored" aria-hidden="true"></i>
+              <span>Figma</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="editorial-section" id="processo">
+          <p class="section-label">processo de desenvolvimento</p>
+          <h2>Exploração, refinamento e consistência de interface</h2>
+          <p>
+            O fluxo de construção passou por três frentes: arquitetura de
+            conteúdo, ritmo visual e ajustes de usabilidade. A busca por
+            campeões foi desenhada para reduzir fricção, com pesquisa por nome e
+            filtros por região e classe em tempo real.
+          </p>
+
+          <figure class="feature-shot">
+            <img
+              src="assets/assetsprojects/riftcodex4.png"
+              alt="Sistema de busca por nome, região e classe no Rift Codex"
+            />
+          </figure>
+        </section>
+
+        <section class="editorial-section" id="resultado">
+          <p class="section-label">resultado e aprendizados</p>
+          <h2>Evolução em produto, narrativa e tomada de decisão visual</h2>
+          <p>
+            O projeto consolidou uma abordagem mais madura de UI: hierarquia
+            forte, leitura confortável e identidade própria. Como próximo passo,
+            a evolução natural é ampliar componentes e integrar dados dinâmicos.
+          </p>
+        </section>
+      </article>
+
+      <section class="gallery-section">
+        <p class="section-label">galeria</p>
+        <h2>Screens do projeto</h2>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="assets/assetsprojects/riftcodex1.png"
+              alt="Tela inicial do Rift Codex"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="assets/assetsprojects/riftcodex2.png"
+              alt="Tela de exploração do Rift Codex"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="assets/assetsprojects/riftcodex3.png"
+              alt="Tela de conteúdo do Rift Codex"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-footer">
+        <p class="section-label">links finais</p>
+        <h2>Acessar o projeto</h2>
+        <div class="hero-actions">
+          <a
+            class="button button-secondary"
+            href="https://github.com/pedrofguimaa/rift-codex"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            class="button button-primary"
+            href="https://rift-codex.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Deploy</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script src="project-case.js"></script>
+  </body>
+</html>
